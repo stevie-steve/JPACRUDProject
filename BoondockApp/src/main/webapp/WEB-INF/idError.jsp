@@ -6,10 +6,10 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>Please enter information for all fields
+<body>There is no entry for that ID
 <br>
 <a href="/" button type="button" class="btn btn-outline-primary">Home</a><br>
-
-	<a href="addBoondock.do" button type="button">Add Boondock</a>
+	<a href="getBoondock.do" button type="button"
+		>Search By ID</a>
 </body>
 </html>

@@ -51,8 +51,53 @@ public class Boondock {
 	// methods
 
 	public Boondock() {
-		super();
+
 	}
+	
+
+	public Boondock(String name, boolean free, String location, String gpsLatitude, String gpsLongitude, int elevation,
+			String management, String activities, String photo, double averageRating, int numberOfReviews,
+			String mapImage, String currentWeather, int lengthOfAllowedStay) {
+		super();
+		this.name = name;
+		this.free = free;
+		this.location = location;
+		this.gpsLatitude = gpsLatitude;
+		this.gpsLongitude = gpsLongitude;
+		this.elevation = elevation;
+		this.management = management;
+		this.activities = activities;
+		this.photo = photo;
+		this.averageRating = averageRating;
+		this.numberOfReviews = numberOfReviews;
+		this.mapImage = mapImage;
+		this.currentWeather = currentWeather;
+		this.lengthOfAllowedStay = lengthOfAllowedStay;
+	}
+
+	
+
+	public Boondock(int id, String name, boolean free, String location, String gpsLatitude, String gpsLongitude,
+			int elevation, String management, String activities, String photo, double averageRating,
+			int numberOfReviews, String mapImage, String currentWeather, int lengthOfAllowedStay) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.free = free;
+		this.location = location;
+		this.gpsLatitude = gpsLatitude;
+		this.gpsLongitude = gpsLongitude;
+		this.elevation = elevation;
+		this.management = management;
+		this.activities = activities;
+		this.photo = photo;
+		this.averageRating = averageRating;
+		this.numberOfReviews = numberOfReviews;
+		this.mapImage = mapImage;
+		this.currentWeather = currentWeather;
+		this.lengthOfAllowedStay = lengthOfAllowedStay;
+	}
+
 
 	public int getId() {
 		return id;
@@ -158,12 +203,12 @@ public class Boondock {
 		this.mapImage = mapImage;
 	}
 
-	public String getcurrentWeather() {
+	public String getCurrentWeather() {
 		return currentWeather;
 	}
 
-	public void setcurrentWeather(String fiveDayForecast) {
-		this.currentWeather = fiveDayForecast;
+	public void setCurrentWeather(String currentWeather) {
+		this.currentWeather = currentWeather;
 	}
 
 	public int getLengthOfAllowedStay() {
@@ -210,27 +255,5 @@ public class Boondock {
 		builder.append("]");
 		return builder.toString();
 	}
-
-	public Boondock(int id, String name, boolean free, String location, String gpsLatitude, String gpsLongitude,
-			int elevation, String management, String activities, String photo, double averageRating,
-			int numberOfReviews, String mapImage, String currentWeather, int lengthOfAllowedStay) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.free = free;
-		this.location = location;
-		this.gpsLatitude = gpsLatitude;
-		this.gpsLongitude = gpsLongitude;
-		this.elevation = elevation;
-		this.management = management;
-		this.activities = activities;
-		this.photo = photo;
-		this.averageRating = averageRating;
-		this.numberOfReviews = numberOfReviews;
-		this.mapImage = mapImage;
-		this.currentWeather = currentWeather;
-		this.lengthOfAllowedStay = lengthOfAllowedStay;
-	}
-	
 
 }

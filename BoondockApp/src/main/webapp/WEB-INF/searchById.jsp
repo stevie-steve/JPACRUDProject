@@ -9,7 +9,7 @@
 <body>
 	<form action="getBoondockById.do" method="GET">
 		Enter Boondock ID: <input type="text" name="id" /> <input
-			type="submit" value="Search Boondocks" button type="button" />
+			type="submit" value="Search Boondocks" button type="button"/>
 	</form>
 
 

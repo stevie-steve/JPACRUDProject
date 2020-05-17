@@ -28,24 +28,29 @@ public class BoondockController {
 	@RequestMapping(path = "getBoondockById.do")
 	public String FindBoondock(@RequestParam("id") Integer bid, Model model) {
 		Boondock b = dao.findById(bid);
-		model.addAttribute("boondock", b);
-		return "BoondockDetail";
+		if (b != null) {
+			model.addAttribute("boondock", b);
+			return "BoondockDetail";
+		} else {
+			return "idError";
+		}
 	}
 
 	@RequestMapping(path = "addBoondock.do", method = RequestMethod.GET)
 	public ModelAndView addBoondockView() throws SQLException {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("addBoondock");
+
 		return mv;
 	}
 
 	@RequestMapping(path = "addBoondock.do", method = RequestMethod.POST)
 	public ModelAndView addTheBoondock(Boondock b) {
 		ModelAndView mv = new ModelAndView();
-			Boondock newBoondock = dao.createBoondock(b);
-			mv.addObject("boondock", newBoondock);
-			if (b != null && b.getName() != "" && b.getLocation() != "") {
-				mv.setViewName("BoondockDetail");
+		Boondock newBoondock = dao.createBoondock(b);
+		mv.addObject("boondock", newBoondock);
+		if (b != null && b.getName() != "" && b.getLocation() != "") {
+			mv.setViewName("BoondockDetail");
 			return mv;
 		} else {
 			mv.setViewName("error");
@@ -53,4 +58,30 @@ public class BoondockController {
 		}
 	}
 
+	@RequestMapping(path = "updateBoondock.do", method = RequestMethod.POST)
+	public ModelAndView updateTheBoondock(@RequestParam int id, Boondock b) {
+		System.out.println(id);
+		ModelAndView mv = new ModelAndView();
+		Boondock updatedBoondock = dao.updateBoondock(id, b);
+		mv.addObject("boondock", updatedBoondock);
+		mv.setViewName("BoondockDetail");
+
+		return mv;
+
+	}
+
+	@RequestMapping(path = "destroyBoondock.do", method = RequestMethod.POST)
+	public ModelAndView destroyTheBoondock(@RequestParam int id, Boondock b) {
+		ModelAndView mv = new ModelAndView();
+		boolean destroyedBoondock = dao.destroyBoondock(id);
+		mv.addObject("boondock", destroyedBoondock);
+		if (destroyedBoondock = true) {
+			mv.setViewName("deleteSuccessful");
+
+			return mv;
+		} else {
+			mv.setViewName("deleteError");
+			return mv;
+		}
+	}
 }
