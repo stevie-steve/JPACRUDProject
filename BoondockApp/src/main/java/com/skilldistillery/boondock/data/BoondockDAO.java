@@ -4,4 +4,7 @@ import com.skilldistillery.boondock.entities.Boondock;
 
 public interface BoondockDAO {
 	public Boondock findById(int id);
+
+	public Boondock createBoondock(Boondock newBoondock);
+	
 }

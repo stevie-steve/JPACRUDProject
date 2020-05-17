@@ -8,5 +8,9 @@
 </head>
 <body>
 	<h1>We're Going Boondockin'</h1>
+	<a href="getBoondock.do">Search Boondock Spots By ID</a>
+	
+	<br>
+	<a href="addBoondock.do">Add your own Boondock Spot</a>
 </body>
 </html>
