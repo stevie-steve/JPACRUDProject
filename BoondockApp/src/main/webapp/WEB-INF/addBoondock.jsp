@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Add your Boondock</title>
 </head>
 <body>
 <a href="/" button type="button" class="btn btn-outline-primary">Home</a>

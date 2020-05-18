@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ID Search Error</title>
 </head>
 <body>There is no entry for that ID
 <br>

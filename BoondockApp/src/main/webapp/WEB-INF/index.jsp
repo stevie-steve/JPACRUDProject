@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>TITLE RIGHT HERE!!!!!</title>
+<title>Boondock App</title>
 </head>
 <body>
 	<h1>We're Going Boondockin'</h1>

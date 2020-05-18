@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Boondock Delete Error</title>
 </head>
 <body>Delete was unsuccessful. The boondock lives on!
 <br>
