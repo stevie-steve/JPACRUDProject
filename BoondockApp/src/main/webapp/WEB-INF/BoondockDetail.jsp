@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Boondock Spot Details</title>
-<br>
-<a href="/" button type="button" class="btn btn-outline-primary">Home</a>
+
+<a href="/" button type="button" class="btn btn-outline-primary">Home</a> <br> <br>
 </head>
 <body>
 

@@ -75,8 +75,8 @@ public class BoondockController {
 		ModelAndView mv = new ModelAndView();
 		boolean destroyedBoondock = dao.destroyBoondock(id);
 		mv.addObject("boondock", destroyedBoondock);
-		if (destroyedBoondock = true) {
-			mv.setViewName("deleteSuccessful");
+		if (destroyedBoondock == true) {
+			mv.setViewName("deletedSuccessful");
 
 			return mv;
 		} else {
