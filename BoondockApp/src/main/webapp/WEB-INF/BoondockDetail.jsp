@@ -6,9 +6,14 @@
 <meta charset="UTF-8">
 <title>Boondock Spot Details</title>
 
-<a href="/" button type="button" class="btn btn-outline-primary">Home</a> <br> <br>
+<a href="/" button type="button" class="btn btn-outline-primary">Home</a>
+<br>
+<br>
 </head>
 <body>
+	<br>Boondock ID : ${boondock.id}
+	<br>
+	<br>
 
 	<form action="updateBoondock.do" method="POST">
 
@@ -101,11 +106,13 @@
 			name="id" /> <input type="submit" value="Update Boondock" />
 
 	</form>
-<br> <br> 
+	<br>
+	<br>
 	<form action="destroyBoondock.do" method="POST">
 		<strong><em>${boondock.name}</em></strong> <input type="hidden"
 			name="id" value="${boondock.id}" /> <input type="submit" button
-			type="button" value="Delete This Boondock Location" class="btn btn-outline-primary" />
+			type="button" value="Delete This Boondock Location"
+			class="btn btn-outline-primary" />
 	</form>
 	<br>
 	<br>

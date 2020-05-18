@@ -42,6 +42,7 @@ public class BoondockDaoJpalmp implements BoondockDAO {
 	public Boondock updateBoondock(int id, Boondock boondock) {
 		Boondock updatedBoondock = em.find(Boondock.class, id);
 
+		updatedBoondock.setName(boondock.getName());
 		updatedBoondock.setFree(boondock.isFree());
 		updatedBoondock.setLocation(boondock.getLocation());
 		updatedBoondock.setGpsLatitude(boondock.getGpsLatitude());
