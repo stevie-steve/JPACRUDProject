@@ -48,9 +48,9 @@ public class BoondockController {
 	public ModelAndView addTheBoondock(Boondock b) {
 		ModelAndView mv = new ModelAndView();
 		Boondock newBoondock = dao.createBoondock(b);
-		mv.addObject("boondock", newBoondock);
-		if (b != null && b.getName() != "" && b.getLocation() != "") {
+		if (b.getName() != "" && b.getLocation() != "") {
 			mv.setViewName("BoondockDetail");
+			mv.addObject("boondock", newBoondock);
 			return mv;
 		} else {
 			mv.setViewName("error");

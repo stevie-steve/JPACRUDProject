@@ -11,7 +11,7 @@ public class Boondock {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Integer id;
 
 	private String name;
 
@@ -25,7 +25,7 @@ public class Boondock {
 	@Column(name = "gps_longitude")
 	private String gpsLongitude;
 
-	private int elevation;
+	private Integer elevation;
 
 	private String management;
 
@@ -34,10 +34,10 @@ public class Boondock {
 	private String photo;
 
 	@Column(name = "average_rating_out_of_five")
-	private double averageRating;
+	private Double averageRating;
 
 	@Column(name = "number_of_reviews")
-	private int numberOfReviews;
+	private Integer numberOfReviews;
 
 	@Column(name = "map_image")
 	private String mapImage;
@@ -46,18 +46,17 @@ public class Boondock {
 	private String currentWeather;
 
 	@Column(name = "length_of_allowed_stay_in_days")
-	private int lengthOfAllowedStay;
+	private Integer lengthOfAllowedStay;
 
 	// methods
 
 	public Boondock() {
 
 	}
-	
 
-	public Boondock(String name, boolean free, String location, String gpsLatitude, String gpsLongitude, int elevation,
-			String management, String activities, String photo, double averageRating, int numberOfReviews,
-			String mapImage, String currentWeather, int lengthOfAllowedStay) {
+	public Boondock(String name, boolean free, String location, String gpsLatitude, String gpsLongitude,
+			Integer elevation, String management, String activities, String photo, Double averageRating,
+			Integer numberOfReviews, String mapImage, String currentWeather, Integer lengthOfAllowedStay) {
 		super();
 		this.name = name;
 		this.free = free;
@@ -75,11 +74,9 @@ public class Boondock {
 		this.lengthOfAllowedStay = lengthOfAllowedStay;
 	}
 
-	
-
 	public Boondock(int id, String name, boolean free, String location, String gpsLatitude, String gpsLongitude,
-			int elevation, String management, String activities, String photo, double averageRating,
-			int numberOfReviews, String mapImage, String currentWeather, int lengthOfAllowedStay) {
+			Integer elevation, String management, String activities, String photo, Double averageRating,
+			Integer numberOfReviews, String mapImage, String currentWeather, Integer lengthOfAllowedStay) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -97,7 +94,6 @@ public class Boondock {
 		this.currentWeather = currentWeather;
 		this.lengthOfAllowedStay = lengthOfAllowedStay;
 	}
-
 
 	public int getId() {
 		return id;
@@ -147,11 +143,11 @@ public class Boondock {
 		this.gpsLongitude = gpsLongitude;
 	}
 
-	public int getElevation() {
+	public Integer getElevation() {
 		return elevation;
 	}
 
-	public void setElevation(int elevation) {
+	public void setElevation(Integer elevation) {
 		this.elevation = elevation;
 	}
 
@@ -179,19 +175,19 @@ public class Boondock {
 		this.photo = photo;
 	}
 
-	public double getAverageRating() {
+	public Double getAverageRating() {
 		return averageRating;
 	}
 
-	public void setAverageRating(double averageRating) {
+	public void setAverageRating(Double averageRating) {
 		this.averageRating = averageRating;
 	}
 
-	public int getNumberOfReviews() {
+	public Integer getNumberOfReviews() {
 		return numberOfReviews;
 	}
 
-	public void setNumberOfReviews(int numberOfReviews) {
+	public void setNumberOfReviews(Integer numberOfReviews) {
 		this.numberOfReviews = numberOfReviews;
 	}
 
@@ -211,11 +207,11 @@ public class Boondock {
 		this.currentWeather = currentWeather;
 	}
 
-	public int getLengthOfAllowedStay() {
+	public Integer getLengthOfAllowedStay() {
 		return lengthOfAllowedStay;
 	}
 
-	public void setLengthOfAllowedStay(int lengthOfAllowedStay) {
+	public void setLengthOfAllowedStay(Integer lengthOfAllowedStay) {
 		this.lengthOfAllowedStay = lengthOfAllowedStay;
 	}
 

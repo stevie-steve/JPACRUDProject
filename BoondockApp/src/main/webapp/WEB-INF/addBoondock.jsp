@@ -12,12 +12,12 @@
 	<form action="addBoondock.do" method="POST">
 	
 	Boondock Name:
-	<input type="text" name="name" placeholder="unspecified">
+	<input type="text" name="name" placeholder="Name Your Boondock">
 	<br> Is it Free?:
 	<select type="text" name="free"  placeholder="unspecified">
 						<option value="Yes">Yes</option>
 						<option value="No">No</option>
-					</select><br><br>
+					</select><br>
 	<br> Location:
 	<input type="text" name="location" placeholder="Enter City, State">
 	<br> GPS Latitude:
