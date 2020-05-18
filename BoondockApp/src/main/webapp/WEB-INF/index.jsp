@@ -14,6 +14,6 @@
 	<a href="addBoondock.do">Add your own Boondock Spot</a>
 	
 	<br>
-	<img src="documentsmapview.png"/>
+	<img src="mapview.png"/>
 </body>
 </html>
